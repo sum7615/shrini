@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LPU all links</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ <style>
+
+  a{
+    text-decoration:none;
+    color: black;
+    font-size: 1.5rem;
+  }
+ </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Shrini</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://ums.lpu.in/lpuums/">LPU UMS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://myclass.lpu.in/">My Class</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://lpulive.lpu.in/login">LPU Live</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://ums.lpu.in/lpuums/">LPU UMS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://ums.lpu.in/Placements/">Placements</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    <h1 style="text-align: center;">Hello, Shrini</h1>
+    <h2 style="text-align: center;"> <span id='time'></span>.</h2>
+    <div class="flex">
+      <ul style="padding-left: 30rem;">
+          <li>
+             <a href="https://www.linkedin.com/feed/">Linkedin</a>
+          </li>
+          <li>
+              <a href="https://mail.google.com/mail/u/1/#inbox">Gmail</a>
+          </li>
+          <li>
+              <a href="https://docs.google.com/spreadsheets/d/1H8UTHQhwJth2RnlnGeg6ooPJ9HL0Z_d6V1T8C2NU-6k/edit#gid=0">To-do</a>
+          </li>
+      </ul>
+    </div>
+
+
+
+
+
+
+    <script>
+        `use strict`
+        var datetime = new Date();
+        document.getElementById("time").textContent = datetime; //it will print on html page
+        `use strict`;
+function refreshTime() {
+  const timeDisplay = document.getElementById("time");
+  const dateString = new Date().toLocaleString();
+  const formattedString = dateString.replace(", ", " - ");
+  timeDisplay.textContent = formattedString;
+}
+  setInterval(refreshTime, 1000);
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
